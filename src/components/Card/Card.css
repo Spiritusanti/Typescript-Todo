@@ -1,0 +1,44 @@
+.card__content {
+  background: chocolate;
+  width: 65%;
+  height: auto;
+  padding: 10px;
+  margin: 1.5em;
+}
+.card__content div {
+  padding: 1em;
+  margin: 1em;
+}
+
+.card-content h1 {
+  font-size: 1rem;
+}
+
+.card__content-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+}
+
+.notes {
+  position: relative;
+  text-align: left;
+  height: auto;
+  width: 75%;
+  
+}
+
+.notes h3 {
+  font-size: 1em;
+}
+
+.notes p {
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 600px) {
+  .card__content-sub {
+    flex-direction: column;
+  }
+}

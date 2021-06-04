@@ -1,13 +1,21 @@
-import { Fragment } from "react";
 import { todos } from '../../pages/ToDoPage'
+import './Card.css'
 
 const Card: React.FC<todos> = props => {
     return (
-        <Fragment>
-            <div>{props.taskName}</div>
-            <div>{props.taskDescription}</div>
-            <div>{props.taskDate}</div>
-        </Fragment>
+        <div className="card__content">
+            <h1>task: {props.taskName}</h1>
+            <div className="card__content-sub">
+                <div className="notes">
+                    <h3>Notes</h3>
+                    <p>{props.taskDescription}</p>
+                </div>
+                <div className="date">
+                    <h3>Deadline</h3>
+                    <span>{props.taskDate}</span>
+                </div>
+            </div>
+        </div>
     );
 }
 
